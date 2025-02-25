@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GBS DP Generator</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link
+      rel="stylesheet"
+      src="//normalize-css.googlecode.com/svn/trunk/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="src/css/style.css?v=1.7" />
+    <link rel="stylesheet" type="text/css" href="src/fonts/themify-icons.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header-image">
+        <img id="logo" src="./src/img/ssLogo.png" alt="Singlz Summit Logo" />
+      </div>
+      <div id="header-text">
+        <h1 style="font-family: BelganAesthetic">GBS 5.0</h1>
+      </div>
+    </header>
+    <main>
+      <section class="under">
+        <p class="under-title">
+          Invite your friends for <span id="under-title-highlight">Gadites Bible
+          Seminar 2025</span> with your personalised
+          DP!
+        </p>
+        <p class="sub-title">
+          It is super easy and you get it immediately!
+        </p>
+        <div class="hidden">
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-u">
+        <form
+          enctype="multipart/form-data"
+          action=""
+          method="POST"
+          onsubmit="event.preventDefault();"
+        >
+          <div class="card-container">
+            <div class="form-container" style="margin-top: 8%">
+              <input
+                type="text"
+                id="fullname"
+                class="form-control2"
+                placeholder="Name"
+                required
+                maxlength="29"
+              />
+              <span class="input-field_helper hidden">Name</span>
+
+              <!-- <br /> -->
+              <!-- <input
+                type="text"
+                id="school"
+                class="form-control2"
+                placeholder="School"
+                required
+                maxlength="19"
+              />
+              <span class="input-field_helper school_helper hidden">School</span> -->
+              <p
+                style="
+                  float: right;
+                  margin-top: 5%;
+                  margin-bottom: 0;
+                  margin-right: 15%;
+                  color: grey;
+                "
+              >
+                <span id="counter">0</span> of 115
+              </p>
+              <textarea
+                id="testimony"
+                class="form-control2"
+                style="margin-bottom: 10%"
+                placeholder="What’s your conviction?"
+                maxlength="115"
+                required
+              ></textarea>
+            </div>
+            <br />
+            <div class="image-editor">
+              <!-- <input type="file" class="cropit-image-input"> -->
+              <span
+                class="btn btn-input fileinput-button"
+                style="cursor: pointer"
+              >
+                <!-- <i class="ti-image"></i> -->
+                <img id="img-select" src="./src/img/img.png" alt="Select Image" />
+                <span>Select image</span>
+                <input
+                  id="file"
+                  name="file"
+                  type="file"
+                  class="cropit-image-input"
+                  required=""
+                  style="left: 0;"
+                />
+                <!-- <input
+                  type="hidden"
+                  name="image-data"
+                  class="hidden-image-data"
+                /> -->
+              </span>
+              <div>
+                <span
+                  type="reset"
+                  class="btn-input change hide"
+                  style="cursor: pointer"
+                >
+                  <!-- <i class="ti-image"></i> -->
+                  <img id="img-select" src="./src/img/img.png" alt="Select Image" />
+                  <span>Change Image</span>
+                </span>
+              </div>
+              <div class="">
+                <div class="cropit-preview"></div>
+
+                <div class="image-size-label">Resize image</div>
+                <input
+                  type="range"
+                  class="cropit-image-zoom-input"
+                  style="margin-left: 20%"
+                />
+
+                <input
+                  type="hidden"
+                  name="image-data"
+                  class="hidden-image-data"
+                />
+              </div>
+
+              <button
+                value="submit"
+                type="submit"
+                class="kb-button create-dp"
+                style="margin-left: 20%; margin-top: 10%; margin-bottom: 10%"
+              >
+                Generate DP
+              </button>
+            </div>
+          </div>
+        </form>
+        <p style="font-family: BrooklynHeavy; visibility: hidden">
+            t
+        </p>
+        <p style="font-family: AlbertSansRegular; visibility: hidden">
+            t
+        </p>
+      </section>
+    </main>
+
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/jquery.cropit.js"></script>
+    <script src="src/js/main.js?v=1.7"></script>
+    <script>
+      const textarea = document.getElementById("testimony");
+
+      textarea.addEventListener("input", (event) => {
+        const target = event.currentTarget;
+        const charLen = target.value.length;
+        const counter = document.getElementById("counter");
+        counter.innerText = charLen;
+      });
+      function updateCounter() {
+        let textArea = document.getElementById("testimony");
+        let counter = document.getElementById("counter");
+        console.log(textArea.value.length);
+      }
+    </script>
+  </body>
+</html>
